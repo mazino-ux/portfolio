@@ -1,0 +1,119 @@
+
+
+.about .buttons button, .about .buttons a{
+    position: relative;
+    border: 1.5px solid var(--skin-color);
+    background: var(--skin-color); color: white; white-space: nowrap; text-decoration: none;
+    text-transform: uppercase; letter-spacing: 0.1rem; font-size: 1rem; 
+    padding: 12px 35px; transition: all 0.3s ease;
+    border-radius: 50px; cursor: pointer;
+}
+.about .buttons button::after, .about .buttons a::after{
+    position: absolute; content: '';
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background: #00e4d4;
+    z-index: -1; transform: scale(0);
+    border-radius: .25rem;
+    transform-origin: center;
+    transform: scale(0); box-shadow:  0 0 15px var(--skin-color);
+    border-radius: 5rem; transition: .5s;
+}
+.about .buttons button:hover::after, .about .buttons a:hover::after{
+    transform: scale(1);
+    -webkit-box-reflect: below .2rem linear-gradient(transparent 80%, #0004);
+}
+
+.subs{
+    display: none;
+    font-family: var(--font-family-3);
+    transition: all .4s ease-in-out;
+    position: relative;
+    overflow: hidden;
+
+}
+.subs .icon i{
+    color: var(--lightColor);
+    background: var(--themeColor);
+    line-height: 60px; height: 60px;
+    width: 60px; border-radius: 50%;
+    font-size: 1.65rem;
+}
+#popup-mail {
+    line-height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    border-radius: 3rem 0px 2rem 0px; 
+    color: #000;
+    top: 50%; left: 50%;
+    margin-top: 2rem;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 18px 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    max-width: 500px; 
+    text-align: center;z-index: 999;
+  }
+
+  .subs .close {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0rem;
+    background: var(--themeColor);
+    border-radius: 50% 0 0 50%; /* Border radius for the top-right corner */
+   padding: 0.35rem .75rem; /* Padding for x and y */
+   font-size: 1.5
+}
+
+
+  /* Styles for the overlay */
+  #overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* z-index: 999; */
+  }
+
+@media (max-width:560px){
+    .about .row .buttons {
+        display: flex; flex-wrap: wrap; 
+    }
+
+    .buttons .hire-me{
+        margin-top: .1rem;
+    }
+    .footer{
+        width: 100%; padding: .3rem;
+    }
+    .footer h1{
+        color: #fff; letter-spacing: .1rem;
+        font-weight: 400; font-size: .9rem;
+    }
+
+}
+
+
+/* -------------------------------footer starts------------------------------------ */
+.footer{
+    width: 100%; display: flex; align-items: center;
+    justify-content: space-between; padding: 1rem;
+    margin-top: 1rem; background: linear-gradient(var(--skin-color), var(--uniqueGree)) ;
+}
+.footer h1{
+    color: #fff; letter-spacing: .1rem;
+    font-weight: 400; font-size: 1.5rem;
+}
+
+
+/* -------------------------------footer ends-------------------------------------- */
+
+
