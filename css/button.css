@@ -2,7 +2,7 @@
 
 .about .buttons button, .about .buttons a{
     position: relative;
-    border: 1.7px solid var(--skin-color);
+    border: 1.5px solid var(--skin-color);
     background: var(--skin-color); color: white; white-space: nowrap; text-decoration: none;
     text-transform: uppercase; letter-spacing: 0.1rem; font-size: 1rem; 
     padding: 12px 35px; transition: all 0.3s ease;
