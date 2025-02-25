@@ -57,8 +57,8 @@
                     <div class="row">
                         <div class="home-info padd-15">
                             <h3 class="hello">Hello, my name is <span class="name">Ogwezi Trinity</span></h3>
-                            <h3 class="prof">I'm a <span class="typing" id="typing">Front End Developer</span></h3>
-                            <p>I'm a passionate front-end developer creating captivating web experiences. With a meticulous eye for detail and a passion for innovation, I create stunning and user-friendly websites. Let's bring your ideas to life.</p>
+                            <h3 class="prof">I'm a <span class="typing" id="typing"> </span></h3>
+                            <p>I'm a dedicated Full-Stack Web Developer with a strong focus on creating responsive and user-friendly web interfaces using HTML, CSS, JavaScript, React, and modern frameworks like TypeScript and Next.js. I bring a solid understanding of MySQL and frequently work with Spring Boot (Java) for backend services. My experience includes end-to-end delivery, from design analysis to API integration and QA, ensuring a seamless, high-quality development process.</p>
                             <a style="--clr:#FF44CC" class="btn" href="#contact"><span>Hire Me <i class="fa-solid fa-arrow-right"></i></span>
                                 <i class="i"></i></a> <br><br><br>
                             <div class="icons">
@@ -74,7 +74,7 @@
                     </div>
                 </div>
             </section>
-        <!-- =================HOME SECTION END================== -->
+            <!-- =================HOME SECTION END================== -->
 
 
         <!-- =================ABOUT SECTION START================== -->
@@ -90,20 +90,14 @@
                     <div class="about-content padd-15">
                         <div class="row">
                             <div class="about-text padd-15">
-                                <h3>Hi, I'm Trinity, a passionate <span>Web Developer </span></h3>
-                                <p>Beyond the screen, i'm also a creative soul with a love for drawing and calculation. Coding is the perfect marriage of this two passions, allowing me to seamlessly blend creativity and precise problem solving skills. I believe what sets me apart from other developers, is my passion and tenacity to be better in what I do.</p>
+                                <h3>Hi, I'm Trinity, a passionate <span>Full-Stack Developer</span></h3>
+                                <p>I'm currently pursuing an Advanced Diploma in Software Engineering (ADSE) at Aptech, where I'm honing my skills in web development and software engineering. My journey in tech is driven by a relentless curiosity and a commitment to staying updated with the latest industry trends. I specialize in creating dynamic, responsive, and user-friendly web applications using modern frameworks like Next.js, TypeScript, and React. Beyond coding, I'm actively involved in Web3, blockchain, and smart contract technologies, working towards certification in these fields to broaden my expertise in decentralized systems.</p>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="personal-info padd-15">
                                 <div class="row">
-                                    <!-- <div class="info-item padd-15">
-                                        <p>Birthday: <span>6th April 2007</span></p>
-                                    </div>
-                                    <div class="info-item padd-15">
-                                        <p>Age: <span>17</span></p>
-                                    </div> -->
                                     <div class="info-item padd-15">
                                         <p>Website: <span><a href="https://capnstyle.netlify.app/" target="_blank" style="color: var(--text-black-700);">Aircon</a></span></p>
                                     </div>
@@ -713,9 +707,27 @@
 
         <!-- =================CONTACT SECTION END================== -->
 
-          <!-- /* -------------------------------footer starts------------------------------------ */ -->
-          <section class="footer" id="footer">
-            <h1>Created by <span><a href="">MathenaDev</a></span></h1>
+        <!-- /* -------------------------------footer starts------------------------------------ */ -->
+        <section class="footer" id="footer">
+            <div class="footer-container">
+                <div class="footer-content">
+                    <h1>Created by <span><a href="https://github.com/mazino-ux" target="_blank">MathenaDev</a></span></h1>
+                    <p>Passionate about building innovative and user-friendly web experiences.</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/MathenaCoder" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://github.com/mazino-ux" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/trinity-ogwezi-407809270/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://twitter.com/TOgwezi75723" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <div class="support-me">
+                        <p>Enjoyed my work? Support me!</p><br>
+                        <a href="https://fund-me-puce.vercel.app/" target="_blank" class="support-link">Support Me 💝</a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 Ogwezi Trinity. All rights reserved.</p>
+                </div>
+            </div>
         </section>
         <!-- /* -------------------------------footer ends-------------------------------------- */ -->
 
@@ -816,39 +828,49 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.10.2/jspdf.umd.min.js"></script>
 
     <script>
-       $(document).ready(function () {
+        $(document).ready(function () {
             // Function to toggle dark theme
             function toggleDarkTheme() {
                 $('body').toggleClass('dark');
+                // Save the theme preference in local storage
+                if ($('body').hasClass('dark')) {
+                    localStorage.setItem('theme', 'dark');
+                } else {
+                    localStorage.setItem('theme', 'light');
+                }
             }
-
+    
+            // Check local storage for saved theme preference
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'dark') {
+                $('body').addClass('dark');
+                $('.fa-moon').hide();
+                $('.fa-sun').show();
+            } else {
+                $('body').removeClass('dark');
+                $('.fa-moon').show();
+                $('.fa-sun').hide();
+            }
+    
+            // Toggle dark theme on button click
             $('.day-night').click(function () {
                 toggleDarkTheme();
-            });
-
-            let a = $(".fa-moon");
-            let b = $(".fa-sun");
-
-            $(".day-night").click(function() {
-                if (a.is(":visible")) {
-                    a.hide();
-                    b.show();
+                // Toggle moon and sun icons
+                if ($('.fa-moon').is(':visible')) {
+                    $('.fa-moon').hide();
+                    $('.fa-sun').show();
                 } else {
-                    a.show();
-                    b.hide();
-                }       
-            }); 
-
-            $(".nav-toggler").on("click", function () {
-                $(".aside, .section").toggleClass("open");
+                    $('.fa-moon').show();
+                    $('.fa-sun').hide();
+                }
             });
-            // $(".nav-toggler").on("click", function () {
-            //     $(".section").toggleClass("open");
-            // });
-            
+    
+            // Toggle aside and section on nav-toggler click
+            $('.nav-toggler').on('click', function () {
+                $('.aside, .section').toggleClass('open');
+            });
         });
-    </script> 
-    <script>
+
         const toggler = document.querySelector('.menu-toggle');
         const nav = document.querySelector('.navigation');
 
@@ -856,21 +878,22 @@
            nav.classList.toggle("active")
        }
        
+         // Function to change the color and save it to local storage
         function changeColor(color) {
-        //    var buttonElements = document.querySelectorAll('.compare-button');
-           document.documentElement.style.setProperty('--skin-color', color);
-           document.documentElement.style.setProperty('--skinlight', color);
+            // Set the CSS custom properties for the color
+            document.documentElement.style.setProperty('--skin-color', color);
+            document.documentElement.style.setProperty('--skinlight', color);
 
-           // Loop through each text element and change its color
-           textElements.forEach(function(element) {
-               element.style.color = color;
-           });
+            // Save the selected color to local storage
+            localStorage.setItem('selectedColor', color);
+        }
 
-           // Loop through each button element and change its background color
-           buttonElements.forEach(function(button) {
-               button.style.backgroundColor = color;
-           });
-       }
+        // Retrieve the saved color from local storage on page load
+        const savedColor = localStorage.getItem('selectedColor');
+        if (savedColor) {
+            // Apply the saved color
+            changeColor(savedColor);
+        }
 
         function addToCart(productId, price) {
             // Perform the logic to add the item to the cart
@@ -918,17 +941,6 @@
         anchorElement.click();
         anchorElement.remove();
     });
-             // Function to show the popup
-        // function showPopup() {
-        //     let overlay = document.getElementById('overlay');
-        //     let popup = document.querySelector('.subs');
-        //     overlay.style.display = 'block';
-        //     popup.style.display = 'block';
-        // }
-
-        // Function to hide the popup
-
-
 
     function sendEmail() {
         

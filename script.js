@@ -1,6 +1,6 @@
 // TYPING EFFECT==========================================================
 const typingTextElement = document.getElementById('typing');
-const words = ['Front-End Developer', 'Freelancer!', 'Web Designer!', 'Content Creator!', 'Web Developer', 'YouTuber!'];
+const words = ['Full-Stack Developer', 'Front-End Developer', 'Freelancer!', 'Web Designer!', 'Content Creator!', 'Web Developer', 'YouTuber!'];
 let currentIndex = 0;
 let currentWord = '';
 let charIndex = 0;
@@ -88,29 +88,7 @@ document.addEventListener("DOMContentLoaded", function (){
 
 /*==================================== ASIDE =====================================*/
 document.addEventListener("DOMContentLoaded", function(){
-  // const nav = document.querySelector(".nav"),
-  // navList = nav.querySelectorAll("li"),
-  // totalNavList = navList.length,
-  // allSection = document.querySelectorAll(".section"),
-  // totalSection = allSection.length;
-
-  // for (let i = 0; i < totalNavList; i++) {
-  //   const a = navList[i].querySelector("a");
-  //   a.addEventListener("click", function (e) {
-  //     for (let i = 0; i < totalSection; i++) {
-  //       allSection[i].classList.remove("back-section");
-  //     }
-  //     e.preventDefault(); // Prevent the default behavior of the anchor tag
-  //     for (let j = 0; j < totalNavList; j++) {
-  //       if (navList[j].querySelector("a").classList.contains("active")){
-  //         allSection[j].classList.add("back-section");
-  //       }
-  //       navList[j].querySelector("a").classList.remove("active");
-  //     }
-  //     this.classList.add("active");
-  //     showSection(this);
-  //   });
-  // }
+  
   const nav = document.querySelector(".nav"),
         navList = nav.querySelectorAll("li"), // Use querySelectorAll to select all list items
         totalNavList = navList.length,
