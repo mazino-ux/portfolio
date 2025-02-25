@@ -91,19 +91,19 @@
     .buttons .hire-me{
         margin-top: .1rem;
     }
-    .footer{
+    /* .footer{
         width: 100%; padding: .3rem;
     }
     .footer h1{
         color: #fff; letter-spacing: .1rem;
         font-weight: 400; font-size: .9rem;
-    }
+    } */
 
 }
 
 
 /* -------------------------------footer starts------------------------------------ */
-.footer{
+/* .footer{
     width: 100%; display: flex; align-items: center;
     justify-content: space-between; padding: 1rem;
     margin-top: 1rem; background: linear-gradient(var(--skin-color), var(--uniqueGree)) ;
@@ -111,7 +111,7 @@
 .footer h1{
     color: #fff; letter-spacing: .1rem;
     font-weight: 400; font-size: 1.5rem;
-}
+} */
 
 
 /* -------------------------------footer ends-------------------------------------- */

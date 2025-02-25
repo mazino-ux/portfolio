@@ -361,7 +361,7 @@ h3.prof{
     color: var(--skin-color);
 }
 .home-info p{
-    margin-bottom: 55px;  font-size: 20px;
+    margin-bottom: 55px;  font-size: 18px;
     color: var(--text-black-700);
 }
 .home .home-img{
@@ -1061,7 +1061,7 @@ form textarea{
         margin: 15px 0;
     }
     .home-info p{
-        margin-bottom: 55px;  font-size: 18px;
+        margin-bottom: 55px;  font-size: 16px;
         color: var(--text-black-700); line-height: normal;
     }
     
