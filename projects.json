@@ -162,7 +162,7 @@
     "id": 10,
     "title": "Notification Engine",
     "description": "Node.js + MongoDB system handling 10K+ concurrent WebSocket connections.",
-    "image": "images/notification-engine.png",
+    "image": "images/in-app.avif",
     "technologies": ["Node.js", "WebSockets", "MongoDB", "Redis"],
     "date": "May 2024",
     "website": "",
