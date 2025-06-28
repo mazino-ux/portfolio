@@ -1,6 +1,6 @@
 // TYPING EFFECT==========================================================
 const typingTextElement = document.getElementById('typing');
-const words = ['Full-Stack Developer', 'Front-End Developer', 'Freelancer!', 'Web Designer!', 'Content Creator!', 'Web Developer', 'YouTuber!'];
+const words = ['Full-Stack Developer', 'Front-End Developer', 'Freelancer!', 'Back-End Developer!', 'Content Creator!', 'Web Developer', 'YouTuber!', 'Writer!',];
 let currentIndex = 0;
 let currentWord = '';
 let charIndex = 0;
@@ -255,5 +255,53 @@ document.getElementById("content").style.display = "block";
 
 });
 
+// Firebase Configuration (using environment variables)
+document.addEventListener("DOMContentLoaded", function () {
+    // Import the Firebase modules
+   
+  // Initialize Firebase
+  const firebaseConfig = {
+      apiKey: process.env.FIREBASE_API_KEY,
+      authDomain: process.env.FIREBASE_AUTH_DOMAIN,
+      databaseURL: process.env.FIREBASE_DATABASE_URL,
+      projectId: process.env.FIREBASE_PROJECT_ID,
+      storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
+      messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
+      appId: process.env.FIREBASE_APP_ID
+  };
 
+  // Initialize Firebase
+  const app = firebase.initializeApp(firebaseConfig);
+  const database = firebase.database();
 
+  // Handle form submission
+  document.getElementById('contactForm')?.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const firstName = document.getElementById('firstName').value;
+      const lastName = document.getElementById('lastName').value;
+      const email = document.getElementById('email').value;
+      const subject = document.getElementById('subject').value;
+      const message = document.getElementById('message').value;
+
+      // Reference to the 'messages' path in the database
+      const messagesRef = database.ref('messages');
+      const newMessageRef = messagesRef.push();
+      
+      newMessageRef.set({
+          firstName: firstName,
+          lastName: lastName,
+          email: email,
+          subject: subject,
+          message: message,
+          timestamp: firebase.database.ServerValue.TIMESTAMP
+      }).then(() => {
+          alert('Message sent successfully!');
+          document.getElementById('contactForm').reset();
+      }).catch((error) => {
+          console.error('Error sending message:', error);
+          alert('Error sending message. Please try again.');
+      });
+  });
+
+});

@@ -1,0 +1,179 @@
+[
+  {
+    "id": 1,
+    "title": "V-Tickets",
+    "description": "Event management SaaS platform serving 40K+ users with ticket purchasing features.",
+    "image": "images/vtickets.png",
+    "technologies": ["Next.js", "TypeScript", "Tailwind CSS", "Node.js"],
+    "date": "Nov 2024 - Feb 2025",
+    "website": "https://vtickets.site",
+    "github": "https://github.com/mazino-ux/vtickets",
+    "isPrivate": true,
+    "features": [
+      "Reduced bundle size by 42% through Next.js optimizations",
+      "Achieved 95%+ CLS scores across 120+ page templates",
+      "Boosted conversions by 22% with geolocation features"
+    ],
+    "category": "frontend"
+  },
+  {
+    "id": 2,
+    "title": "3D Portfolio Platform",
+    "description": "Immersive 3D portfolio using Three.js with real-time interactive elements.",
+    "image": "images/webgl.png",
+    "technologies": ["Three.js", "Next.js", "Tailwind CSS", "WebGL"],
+    "date": "Jan 2024",
+    "website": "https://threejs2706.netlify.app",
+    "github": "https://github.com/mazino-ux/portfolio-mz",
+    "isPrivate": false,
+    "features": [
+      "Maintained 60fps across devices",
+      "Implemented real-time features with Socket.io",
+      "Integrated Supabase for backend functionality"
+    ],
+    "category": "frontend"
+  },
+  {
+    "id": 3,
+    "title": "Ambroisa Haven",
+    "description": "E-commerce platform for luxury home goods with cart functionality and smooth animations.",
+    "image": "images/haven.png",
+    "technologies": ["JavaScript", "CSS3", "HTML5", "GSAP"],
+    "date": "Dec 2023",
+    "website": "https://ambrosia34.netlify.app/#",
+    "github": "https://github.com/mazino-ux/ambrosia-haven",
+    "isPrivate": false,
+    "features": [
+      "Product catalog with filtering",
+      "Shopping cart functionality",
+      "Animated product showcases",
+      "Mobile-first design"
+    ],
+    "category": "frontend"
+  },
+  {
+    "id": 4,
+    "title": "CapnStyle E-commerce",
+    "description": "E-commerce platform for caps and accessories with optimized shopping experience.",
+    "image": "images/Screenshot 2024-09-01 at 15.32.40.png",
+    "technologies": ["React", "Node.js", "MongoDB", "Stripe"],
+    "date": "Sep 2023",
+    "website": "https://capnstyle.netlify.app/",
+    "github": "",
+    "isPrivate": true,
+    "features": [
+      "Increased online sales by 35%",
+      "Streamlined checkout process",
+      "Mobile-first responsive design",
+      "Integrated payment processing"
+    ],
+    "category": "fullstack"
+  },
+  {
+    "id": 5,
+    "title": "Intuitive Probe",
+    "category": "frontend",
+    "description": "An online platform helping users unlock their coding potentials with interactive learning modules.",
+    "image": "images/intitive copy.png",
+    "technologies": ["HTML", "CSS", "JavaScript", "GSAP"],
+    "date": "Jun 2023",
+    "website": "https://onlineprobe.netlify.app/",
+    "github": "https://github.com/mazino-ux/intuitive-probe",
+    "isPrivate": false,
+    "features": [
+      "Interactive coding tutorials",
+      "Responsive design for all devices",
+      "Smooth animations with GSAP",
+      "User progress tracking"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Three.js Demo",
+    "description": "Interactive 3D web experience showcasing my skills with Three.js and WebGL.",
+    "image": "images/threejsdemo.png",
+    "technologies": ["Three.js", "JavaScript", "WebGL", "HTML5"],
+    "date": "Sep 2023",
+    "website": "https://threejs2706.netlify.app",
+    "github": "https://github.com/mazino-ux/threejs-demo",
+    "isPrivate": false,
+    "features": [
+      "3D object rendering in browser",
+      "Interactive camera controls",
+      "Optimized for performance",
+      "Responsive design"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Web Service Platform",
+    "description": "Comprehensive web services showcase with service filtering and contact system.",
+    "image": "images/webserv.png",
+    "technologies": ["JavaScript", "CSS3", "HTML5", "Firebase"],
+    "date": "Dec 2023",
+    "website": "https://mathenawebservice.netlify.app",
+    "github": "https://github.com/mazino-ux/web-service-platform",
+    "isPrivate": false,
+    "features": [
+      "Service filtering system",
+      "Interactive contact form",
+      "Responsive design",
+      "Firebase backend integration"
+    ],
+    "category": "frontend"
+  },
+  {
+    "id": 8,
+    "title": "Cosy Aircon",
+    "description": "Showcase website for air conditioning services with interactive elements.",
+    "image": "images/aircon.png",
+    "technologies": ["HTML", "CSS", "JavaScript", "GSAP"],
+    "date": "Aug 2023",
+    "website": "https://cosyaircon.netlify.app/#home",
+    "github": "https://github.com/mazino-ux/cosy-aircon",
+    "isPrivate": false,
+    "features": [
+      "Product showcase with animations",
+      "Service booking system",
+      "Responsive design",
+      "Interactive elements"
+    ],
+    "category": "frontend"
+  },
+  {
+    "id": 9,
+    "title": "Digital Clock",
+    "description": "Interactive digital clock with multiple display modes and themes.",
+    "image": "images/atlas.png",
+    "technologies": ["JavaScript", "CSS3", "HTML5"],
+    "date": "Jul 2023",
+    "website": "#",
+    "github": "https://github.com/mazino-ux/digital-clock",
+    "isPrivate": false,
+    "features": [
+      "Multiple display modes",
+      "Customizable themes",
+      "Alarm functionality",
+      "Time zone support"
+    ],
+    "category": "frontend"
+  },
+  {
+    "id": 10,
+    "title": "Notification Engine",
+    "description": "Node.js + MongoDB system handling 10K+ concurrent WebSocket connections.",
+    "image": "images/notification-engine.png",
+    "technologies": ["Node.js", "WebSockets", "MongoDB", "Redis"],
+    "date": "May 2024",
+    "website": "",
+    "github": "https://github.com/mazino-ux/notification-engine",
+    "isPrivate": false,
+    "features": [
+      "99.9% reliability rate",
+      "Reduced server load by 40%",
+      "Adopted by 3 startups",
+      "Priority queuing system"
+    ],
+    "category": "backend"
+  }
+]

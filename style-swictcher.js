@@ -1,34 +1,51 @@
 
 /*  -------------------------------------------- toggle style switcher -----------------------------------------*/
-document.addEventListener("DOMContentLoaded", function(){
+// style-switcher.js
+function initStyleSwitcher() {
   const styleSwitcherToggle = document.querySelector(".style-switcher-toggler");
-  styleSwitcherToggle.addEventListener("click", () => {
-    document.querySelector(".style-switcher").classList.toggle("open");
-  });
-
-  window.addEventListener("scroll", () => {
-    if(document.querySelector(".style-switcher").classList.contains("open")){
-      document.querySelector(".style-switcher").classList.remove(".open");
-    }
-  });
-
+  const styleSwitcher = document.querySelector(".style-switcher");
   
-/* .............................THEME COLOR.................................... */
-const alternateStyles = document.querySelectorAll(".alternate-style");
-function setActiveStyle(color){
-    alternateStyles.forEach((style) => {
-        if(color === style.getAttribute("title")){
-            style.removeAttribute('disabled');
-        }else{
-            style.setAttribute('disabled','true');
-        }
-    })
+  if (styleSwitcherToggle && styleSwitcher) {
+      // Toggle switcher
+      styleSwitcherToggle.addEventListener("click", () => {
+          styleSwitcher.classList.toggle("open");
+      });
+
+      // Hide on scroll
+      window.addEventListener("scroll", () => {
+          if (styleSwitcher.classList.contains("open")) {
+              styleSwitcher.classList.remove("open");
+          }
+      });
+
+      // Theme colors
+      const colors = document.querySelectorAll(".color");
+      colors.forEach(color => {
+          color.addEventListener("click", function() {
+              const colorValue = this.getAttribute("data-color") || this.style.backgroundColor;
+              if (colorValue) {
+                  document.documentElement.style.setProperty('--skin-color', colorValue);
+                  document.documentElement.style.setProperty('--skinlight', `${colorValue}29`);
+                  localStorage.setItem('selectedColor', colorValue);
+              }
+          });
+      });
+
+      // Load saved color
+      const savedColor = localStorage.getItem('selectedColor');
+      if (savedColor) {
+          document.documentElement.style.setProperty('--skin-color', savedColor);
+          document.documentElement.style.setProperty('--skinlight', `${savedColor}29`);
+      }
+  }
 }
- 
 
-})
-
-
+// Initialize when DOM is ready
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initStyleSwitcher);
+} else {
+  initStyleSwitcher();
+}
 const bubble = document.getElementById('bubble');
 const burst = document.getElementById('burst');
 
