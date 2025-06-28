@@ -242,7 +242,7 @@
 
 @media (max-width: 768px) {
     .portfolio-grid {
-        grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+        grid-template-columns: repeat(1, 1fr);
         gap: 20px;
     }
 
@@ -252,6 +252,10 @@
 }
 
 @media (max-width: 480px) {
+    .portfolio-grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
     .portfolio-filters {
         gap: 6px;
     }
@@ -619,7 +623,7 @@
         max-height: 95vh;
     }
     .modal-details {
-        padding: 1.5rem;
+        padding: .2rem;
     }
     
     .modal-links {
@@ -648,7 +652,7 @@
 
 @media (max-width: 480px) {
     .modal-content {
-        max-width: 95vw;
+        width: 100%;
         border-radius: 12px;
     }
     
@@ -749,7 +753,7 @@
 
 @media (max-width: 576px) {
     .portfolio-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         gap: 5;
     }
     
@@ -767,6 +771,9 @@
     }
     
     .modal-details h2 {
-        font-size: 1.6rem;
+        font-size: 1.2rem;
+    }
+    .modal-details p{
+        font-size: .8rem;
     }
 }
