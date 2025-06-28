@@ -35,6 +35,24 @@
   },
   {
     "id": 3,
+    "title": "Bob the Bar AI",
+    "description": "AI-powered bar assistant that analyzes liquor collections and recommends new bottles with surgical precision.",
+    "image": "images/bob-the-bar-ai.jpg",
+    "technologies": ["Node.js", "Express", "TypeScript", "MongoDB", "DeepSeek API"],
+    "date": "Apr 2025",
+    "website": "https://documenter.getpostman.com/view/your-postman-docs",
+    "github": "https://github.com/mazino-ux/bob-the-bar-ai",
+    "isPrivate": false,
+    "features": [
+      "Flavor profile analysis using AI embeddings",
+      "Personalized bottle recommendations",
+      "Collection diversification suggestions",
+      "Hybrid recommendation engine (DB + ML)"
+    ],
+    "category": "backend"
+  },
+  {
+    "id": 4,
     "title": "Ambroisa Haven",
     "description": "E-commerce platform for luxury home goods with cart functionality and smooth animations.",
     "image": "images/haven.png",
@@ -50,24 +68,6 @@
       "Mobile-first design"
     ],
     "category": "frontend"
-  },
-  {
-    "id": 4,
-    "title": "CapnStyle E-commerce",
-    "description": "E-commerce platform for caps and accessories with optimized shopping experience.",
-    "image": "images/Screenshot 2024-09-01 at 15.32.40.png",
-    "technologies": ["React", "Node.js", "MongoDB", "Stripe"],
-    "date": "Sep 2023",
-    "website": "https://capnstyle.netlify.app/",
-    "github": "",
-    "isPrivate": true,
-    "features": [
-      "Increased online sales by 35%",
-      "Streamlined checkout process",
-      "Mobile-first responsive design",
-      "Integrated payment processing"
-    ],
-    "category": "fullstack"
   },
   {
     "id": 5,
@@ -89,6 +89,24 @@
   },
   {
     "id": 6,
+    "title": "CapnStyle E-commerce",
+    "description": "E-commerce platform for caps and accessories with optimized shopping experience.",
+    "image": "images/capnstyle.png",
+    "technologies": ["React", "Node.js", "MongoDB", "Stripe"],
+    "date": "Sep 2023",
+    "website": "https://capnstyle.netlify.app/",
+    "github": "",
+    "isPrivate": true,
+    "features": [
+      "Increased online sales by 35%",
+      "Streamlined checkout process",
+      "Mobile-first responsive design",
+      "Integrated payment processing"
+    ],
+    "category": "fullstack"
+  },
+  {
+    "id": 7,
     "title": "Three.js Demo",
     "description": "Interactive 3D web experience showcasing my skills with Three.js and WebGL.",
     "image": "images/threejsdemo.png",
@@ -105,7 +123,7 @@
     ]
   },
   {
-    "id": 7,
+    "id": 8,
     "title": "Web Service Platform",
     "description": "Comprehensive web services showcase with service filtering and contact system.",
     "image": "images/webserv.png",
@@ -123,7 +141,7 @@
     "category": "frontend"
   },
   {
-    "id": 8,
+    "id": 9,
     "title": "Cosy Aircon",
     "description": "Showcase website for air conditioning services with interactive elements.",
     "image": "images/aircon.png",
@@ -137,24 +155,6 @@
       "Service booking system",
       "Responsive design",
       "Interactive elements"
-    ],
-    "category": "frontend"
-  },
-  {
-    "id": 9,
-    "title": "Digital Clock",
-    "description": "Interactive digital clock with multiple display modes and themes.",
-    "image": "images/atlas.png",
-    "technologies": ["JavaScript", "CSS3", "HTML5"],
-    "date": "Jul 2023",
-    "website": "#",
-    "github": "https://github.com/mazino-ux/digital-clock",
-    "isPrivate": false,
-    "features": [
-      "Multiple display modes",
-      "Customizable themes",
-      "Alarm functionality",
-      "Time zone support"
     ],
     "category": "frontend"
   },
@@ -175,5 +175,23 @@
       "Priority queuing system"
     ],
     "category": "backend"
+  },
+  {
+    "id": 11,
+    "title": "Digital Clock",
+    "description": "Interactive digital clock with multiple display modes and themes.",
+    "image": "images/atlas.png",
+    "technologies": ["JavaScript", "CSS3", "HTML5"],
+    "date": "Jul 2023",
+    "website": "#",
+    "github": "https://github.com/mazino-ux/digital-clock",
+    "isPrivate": false,
+    "features": [
+      "Multiple display modes",
+      "Customizable themes",
+      "Alarm functionality",
+      "Time zone support"
+    ],
+    "category": "frontend"
   }
 ]
