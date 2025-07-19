@@ -71,6 +71,25 @@
   }, 
   {
     "id": 5,
+    "title": "Sentinel API",
+    "description": "A secure, modular, and production-ready backend API built with Node.js, Express, and MongoDB. Designed for scalable authentication and user management in modern applications.",
+    "image": "https://bs-uploads.toptal.io/blackfish-uploads/components/open_graph_image/10227551/og_image/optimized/secure-rest-api-in-nodejs-18f43b3033c239da5d2525cfd9fdc98f.png",
+    "technologies": ["Node.js", "Express.js", "MongoDB", "JWT", "Mongoose"],
+    "date": "Jul 2023",
+    "website": "https://github.com/mazino-ux/sentinel-api.git",
+    "github": "https://github.com/mazino-ux/sentinel-api.git",
+    "isPrivate": false,
+    "features": [
+      "JWT-based authentication",
+      "Secure password hashing with bcrypt",
+      "Role-based access control",
+      "User profile management",
+      "Modular and scalable folder structure"
+    ],
+    "category": "backend"
+  }, 
+  {
+    "id": 6,
     "title": "Notification Engine",
     "description": "Node.js + MongoDB system handling 10K+ concurrent WebSocket connections.",
     "image": "images/in-app.avif",
@@ -88,7 +107,7 @@
     "category": "backend"
   },
   {
-    "id": 6,
+    "id": 7,
     "title": "Ambroisa Haven",
     "description": "E-commerce platform for luxury home goods with cart functionality and smooth animations.",
     "image": "images/haven.png",
@@ -106,7 +125,7 @@
     "category": "frontend"
   },
   {
-    "id": 7,
+    "id": 8,
     "title": "Intuitive Probe",
     "category": "frontend",
     "description": "An online platform helping users unlock their coding potentials with interactive learning modules.",
@@ -124,7 +143,7 @@
     ]
   },
   {
-    "id": 8,
+    "id": 9,
     "title": "Web Service Platform",
     "description": "Comprehensive web services showcase with service filtering and contact system.",
     "image": "images/webserv.png",
@@ -142,14 +161,14 @@
     "category": "frontend"
   },
   {
-    "id": 9,
+    "id": 10,
     "title": "Three.js Demo",
     "description": "Interactive 3D web experience showcasing my skills with Three.js and WebGL.",
     "image": "images/threejsdemo.png",
     "technologies": ["Three.js", "JavaScript", "WebGL", "HTML5"],
     "date": "Sep 2023",
     "website": "https://threejs2706.netlify.app",
-    "github": "https://github.com/mazino-ux/threejs-demo",
+    "github": "https://github.com/mazino-ux/sentinel-api.git",
     "isPrivate": false,
     "features": [
       "3D object rendering in browser",
@@ -159,7 +178,7 @@
     ]
   },
   {
-    "id": 10,
+    "id": 11,
     "title": "Cosy Aircon",
     "description": "Showcase website for air conditioning services with interactive elements.",
     "image": "images/aircon.png",
@@ -177,13 +196,13 @@
     "category": "frontend"
   },
   {
-    "id": 11,
+    "id": 12,
     "title": "CapnStyle E-commerce",
     "description": "E-commerce platform for caps and accessories with optimized shopping experience.",
     "image": "images/capnstyle.png",
     "technologies": ["React", "Node.js", "MongoDB", "Stripe"],
     "date": "Sep 2023",
-    "website": "https://capnstyle.netlify.app/",
+    "website": "https://github.com/mazino-ux/sentinel-api.git",
     "github": "",
     "isPrivate": true,
     "features": [
@@ -193,23 +212,5 @@
       "Integrated payment processing"
     ],
     "category": "fullstack"
-  },
-  {
-    "id": 12,
-    "title": "Digital Clock",
-    "description": "Interactive digital clock with multiple display modes and themes.",
-    "image": "images/atlas.png",
-    "technologies": ["JavaScript", "CSS3", "HTML5"],
-    "date": "Jul 2023",
-    "website": "#",
-    "github": "https://github.com/mazino-ux/digital-clock",
-    "isPrivate": false,
-    "features": [
-      "Multiple display modes",
-      "Customizable themes",
-      "Alarm functionality",
-      "Time zone support"
-    ],
-    "category": "frontend"
   }
 ]
