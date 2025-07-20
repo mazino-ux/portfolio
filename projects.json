@@ -23,7 +23,7 @@
     "image": "images/webgl.png",
     "technologies": ["Three.js", "Next.js", "Tailwind CSS", "WebGL"],
     "date": "Jan 2024",
-    "website": "https://threejs2706.netlify.app",
+    "website": "https://mazino-portfolio-psalm1vs3.vercel.app/",
     "github": "https://github.com/mazino-ux/portfolio-mz",
     "isPrivate": false,
     "features": [
