@@ -349,7 +349,7 @@ body{
 /* -------------------------------------------------------------HOME SECTION---------------------------------------------------- */
 .home{
     min-height: 100vh;
-    /* display: flex; color: var(--text-black-900); */
+    display: flex; color: var(--text-black-900);
 }
 .home .home-info{
     flex: 0 0 60%;
