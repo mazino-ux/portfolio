@@ -236,6 +236,15 @@ body{
     flex: 0 0 100%; max-width: 100%;
     margin-bottom: 60px;
     /* background-color: var(--skin-color); */
+
+    .fp-project{
+        color: var(--text-black-900);
+        font-size: 1.5rem; font-weight: 700;
+        position: relative;
+        font-size: 40px; display: flex;
+        align-items: center; justify-content: center;
+    }
+
 }
 .section-title h2{
     font-size: 40px; font-weight: 400;
@@ -340,7 +349,7 @@ body{
 /* -------------------------------------------------------------HOME SECTION---------------------------------------------------- */
 .home{
     min-height: 100vh;
-    display: flex; color: var(--text-black-900);
+    /* display: flex; color: var(--text-black-900); */
 }
 .home .home-info{
     flex: 0 0 60%;
@@ -887,6 +896,8 @@ form textarea{
         margin-bottom: 55px;  font-size: 16px;
         color: var(--text-black-700); line-height: normal;
     }
-    
+    .fp-project{
+        font-size: 35rem; 
+    }
 }
 
